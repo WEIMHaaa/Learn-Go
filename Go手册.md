@@ -13,20 +13,20 @@ Go语言入门教程汇总篇：https://mp.weixin.qq.com/s/ONE4afDx6QAzmdBDKGhdx
 ### 二、Go环境
 1. 下载Go安装包
   下载地址：https://golang.google.cn/doc/install?download=go1.16.3.windows-amd64.msi
-  ![](src/base/imgs/go_download.png)
+  ![](imgs/go_download.png)
 
 2. 添加path变量
   D:\software\Go\bin
 
 3. 验证Go安装成功
   go version
-  ![](src/base/imgs/go_version.png)
+  ![](imgs/go_version.png)
 
 4. IDEA搭建Go环境
   1、File > Settings > Plugins ：选择Go安装
-  ![](src/base/imgs/go_pluguins.png)
+  ![](imgs/go_pluguins.png)
   2、File > Settings > Languages & Frameworks > Go >  GOPATH
-  ![](src/base/imgs/go_path.png)
+  ![](imgs/go_path.png)
 
 5. IDEA添加Go模板
   File > Settings > Editor > File and Code Templates > Files > Go File

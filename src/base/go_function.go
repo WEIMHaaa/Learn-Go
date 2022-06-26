@@ -6,7 +6,10 @@ package main
  * @description	函数
  */
 
-import _ "fmt"
+import (
+	_ "fmt"
+	"myutil/myutil"
+)
 
 func calculate1(a int, b int) int { //两个整型输入，一个整型输出
 	var c = a * b
@@ -28,4 +31,5 @@ func main() {
 	println(calculate1(2, 3))
 	println(calculate2(2, 3))
 	println(calculate3(2, 3))
+	println(myutil.Add(1, 2))
 }
