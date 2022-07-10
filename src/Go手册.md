@@ -3,33 +3,35 @@
 ---
 
 ### 一、GO简介
-Go官网：https://golang.google.cn/doc/
-Go下载：https://golang.google.cn/dl/
-GO网址导航：https://hao.studygolang.com/
-Go语言入门教程汇总篇：https://mp.weixin.qq.com/s/ONE4afDx6QAzmdBDKGhdxw
+1. Go官网：https://golang.google.cn/doc/
+2. Go下载：https://golang.google.cn/dl/
+3. GO网址导航：https://hao.studygolang.com/
+4. Go语言入门教程汇总篇：https://mp.weixin.qq.com/s/ONE4afDx6QAzmdBDKGhdxw
 
 ---
 
 ### 二、Go环境
 1. 下载Go安装包
-  下载地址：https://golang.google.cn/doc/install?download=go1.16.3.windows-amd64.msi
-  ![](imgs/go_download.png)
+下载地址（Win）：https://golang.google.cn/doc/install?download=go1.16.3.windows-amd64.msi
+![](../imgs/go_download.png)
+下载地址（Mac）：https://golang.google.cn/doc/install
+![](../imgs/go_downloand_mac.png)
 
-2. 添加path变量
-  D:\software\Go\bin
+2. 添加path变量  
+D:\software\Go\bin   
 
-3. 验证Go安装成功
-  go version
-  ![](imgs/go_version.png)
+3. 验证Go安装成功  
+go version  
+![](../imgs/go_version.png)
 
-4. IDEA搭建Go环境
-  1、File > Settings > Plugins ：选择Go安装
-  ![](imgs/go_pluguins.png)
-  2、File > Settings > Languages & Frameworks > Go >  GOPATH
-  ![](imgs/go_path.png)
+4. IDEA搭建Go环境  
+1、File > Settings > Plugins ：选择Go安装  
+![](../imgs/go_pluguins.png)  
+2、File > Settings > Languages & Frameworks > Go >  GOPATH  
+![](../imgs/go_path.png)  
 
 5. IDEA添加Go模板
-  File > Settings > Editor > File and Code Templates > Files > Go File
+File > Settings > Editor > File and Code Templates > Files > Go File
 ```
 /**
   * @author       weimenghua
