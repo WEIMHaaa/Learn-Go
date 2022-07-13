@@ -38,6 +38,14 @@ Go语言入门教程汇总篇：https://mp.weixin.qq.com/s/ONE4afDx6QAzmdBDKGhdx
   */
 ```
 
+6. mac搭建Go环境
+查看Go环境变量：go env
+sudo vim ~/.zshrc
+export GOROOT=/usr/local/go            #程序安装的位置
+export GOPATH=~/IdeaProjects/Learn-Go  #项目位置
+export PATH=$GOROOT/bin:$GOPATH        #总的路径
+source ~/.zshrc
+
 --- 
 
 ### 三、Go教程
