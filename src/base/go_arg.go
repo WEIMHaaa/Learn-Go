@@ -19,5 +19,6 @@ func main() {
 
 	slice := []int{1, 2, 3, 4, 5}
 	func1(slice...) //传递切片时需要在末尾加上 ... 作为标识，表示对应的参数类型是变长参数
-	func1(slice[2:5]...)
+	fmt.Println()
+	func1(slice[2:5]...) //输出下标从2到5的数值
 }

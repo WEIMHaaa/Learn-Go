@@ -11,25 +11,23 @@
 ---
 
 ### 二、Go环境
-1. 下载Go安装包
-下载地址（Win）：https://golang.google.cn/doc/install?download=go1.16.3.windows-amd64.msi
-![](../imgs/go_download.png)
-下载地址（Mac）：https://golang.google.cn/doc/install
-![](../imgs/go_downloand_mac.png)
-
+1. 下载Go安装包并安装
+下载地址：https://golang.google.cn/doc/install
 2. 添加path变量  
-D:\software\Go\bin   
-
+win：D:\software\Go\bin   
+mac：/usr/local/go
+```
+sudo vim ~/.zshrc
+export GOROOT=/usr/local/go            #程序安装的位置
+export GOPATH=~/IdeaProjects/Learn-Go  #项目位置
+export PATH=$GOROOT/bin:$GOPATH        #总的路径
+source ~/.zshrc
+```
 3. 验证Go安装成功  
-go version  
-![](../imgs/go_version.png)
-
+go version
 4. IDEA搭建Go环境  
 1、File > Settings > Plugins ：选择Go安装  
-![](../imgs/go_pluguins.png)  
-2、File > Settings > Languages & Frameworks > Go >  GOPATH  
-![](../imgs/go_path.png)  
-
+2、File > Settings > Languages & Frameworks > Go >  GOPATH ：添加Go环境变量路径
 5. IDEA添加Go模板
 File > Settings > Editor > File and Code Templates > Files > Go File
 ```
@@ -39,14 +37,8 @@ File > Settings > Editor > File and Code Templates > Files > Go File
   * @description
   */
 ```
-
-6. mac搭建Go环境
-查看Go环境变量：go env
-sudo vim ~/.zshrc
-export GOROOT=/usr/local/go            #程序安装的位置
-export GOPATH=~/IdeaProjects/Learn-Go  #项目位置
-export PATH=$GOROOT/bin:$GOPATH        #总的路径
-source ~/.zshrc
+6. 查看Go环境变量：go env
+7. 不知道干啥的：go mod init demo  
 
 --- 
 
@@ -66,7 +58,7 @@ package  main
 import  "fmt"
 
 func  main()  {
-    /* 这是我的第一个简单的程序 */
+    /* 第一个Go程序 */
     fmt.Println("Hello, World!")
 }
 ```
@@ -79,4 +71,8 @@ func  main()  {
 
 #### 3、执行Go程序
 运行go文件：go run main.go  
-生成exe文件：go build main.go
+运行go文件：sudo /usr/local/go/bin/go run main.go (未配置好环境变量直接指定go的绝对路径)  
+生成exe文件：go build main.go  
+运行go测试文件并生成测试报告和覆盖率报告（cd test）：  
+sudo /usr/local/go/bin/go test -short -v -json -cover -coverprofile cover.out ./... > ../golang-report/report.jsonl  
+sudo /usr/local/go/bin/go tool cover -html=cover.out -o ../golang-report/index.html
